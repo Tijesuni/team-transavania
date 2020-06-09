@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav{
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+label{
+    color: #fff;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right: 100px;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+
+nav ul li a{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 20px;
+}
+
+a.active, a:hover{
+    color: #fff;
+    text-decoration: #f044ff;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 20px;
+    line-height: 80px;
+    color: #fff;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.topnav-text{
+    color: #fff;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+
+#underlay-img{
+    position: relative;
+    background-image: url('img/pic9.jpeg');
+    max-width: 100%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('img/pic0.jpeg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.topnav-text1{
+    font-size: 50px;
+}
+@media screen and (max-width:962px){
+    nav img{
+        float: left;
+        width: 50px;
+    }
+    nav label .logo{
+        font-size: medium;
+        float: left;
+        padding-top: 25px;
+     }
+    #overlay-img{
+        height: 100%;
+        background-size: 100% ;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 30px;
+        left: -100%;
+        text-align: left;
+        transition: all 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 20px 0px;
+        line-height: 20px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a.active,a:hover{
+        color: #fff;
+        text-decoration: #f044ff;
+    }
+
+    .topnav-text{
+        padding-top: 150px;
+    }
+
+    .topnav-text1{
+        font-size: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    background-size: cover;
+    height: 100vh;
+}
+
+
